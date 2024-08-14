@@ -1,1 +1,594 @@
+Burger Menu
+Navigation Links | Gradient Options | Social Media Bar
+What is the Burger Menu?
+A burger menu is an icon used on a website's header that, when clicked, opens a side menu or navigation drawer. It is represented by three lines that look like the famous sandwich, thus the name "burger." See below example.
+Primary Navigation Links
+The standard main navigation menu can contain a maximum of 5 links.
 
+However, you can add more links if the Mega Menu is enabled. Please see the Mega Menu page for more details.
+You can also choose to have a 'Burger Menu' - this replaces the primary links with three horizontal links which users have to click to see primary navigation links.
+It is recommended that instead of secondary navigation, to represent links in the body of your site, either by using buttons, images with overlays that link out, break up content or use partitions with different background colours. Understandably for larger sites with multiple events and locations, this is not ideal and can now be replaced with the Mega Menu function if further links/sublinks are required.
+The Navigation menu in the header is created as part of the site template and includes links to a standard set of pages including:
+• Home
+• Exhibitors
+• Seminars
+• For Exhibitors
+Ordering of Navigation Links
+The default order in which the Navigation links appear is driven by the order in which they are listed in the Site Structure, and this is essentially the order in which they were created.
+
+To change the order, load the Site Structure view and then click on the 'Language' page (e.g. 'English') so that the site pages are listed. Click on the icon to the far right (next to the 'Create' button) and select ‘List View’.
+
+This will present all of the pages in a list. To the right of each item is a column of dots; this acts as a handle for the page. Move your cursor over this handle, click and hold and drag the page up or down
+
+Adding & removing links from navigation
+By default, any new pages that you create are hidden from the Navigation.
+
+You can add or 'unhide' a page by opening in in ‘Edit’ mode and select 'Open Properties' from the slider control menu in the toolbar at the top of the page. When the configuration window opens uncheck the box next to 'Hide
+from Navigation'.
+To remove a page from the navigation, open the page in ‘Edit’ mode and the selecting 'Open Properties' from the slider menu in the toolbar at the top of the page. When the configuration window opens tick the box next to ‘Hide from Navigation’.
+
+Click on the tick in the top right of the configuration window and the page will refresh. You will see that the page now appears in the Navigation.
+Changes are not appearing on my site
+Sometimes changes to the the header navigation do not appear on the live site (or only on certain pages). Try the following:
+• Publish the page you made the change on
+• Publish the 'live' page
+• Publish all other pages
+If the changes still haven't appeared on the live site, please raise a support ticket.
+Table of Contents
+1. What is the Burger Menu?
+2. Customising the Burger Menu
+Note: Users can now click on the line to go to the second level of navigation.
+Step-by-Step Guide: Customising the Burger Menu
+STEP 1: Go to your site's home page. Click the Page Header container then the gear icon to open the configuration dialogue.
+
+STEP 2: Customise the Burger Menu. You can also add logos, change its navigation background color, add social media links, and select the social media bar style. 
+
+STEP 3: By default, the Social Media Bar's background is set to Solid Color. However, you can choose from Gradient - Top to Bottom, Gradient - Left to right, and Gradient - Right to left. 
+
+STEP 4: Click Publish. Your site should now show the Burger Menu with your customisations. 
+Site Theme
+Theme changes are done at the Event Edition level and flow down the tree to the Language Edition and child pages. The theme can be changed from the page properties on the site structure view or from the page properties within the live page. Once the theme changes have been made, the live page must be published. 
+Theme settings in Edit mode 
+There are two menthods for changing the site theme: 
+1. Select the Event Edition thumbnail 
+2. Select Edit 
+Then the author must edit page properties, to to this: 
+Note: When setting the accent colour, ensure there is a '#' in front to the colour code.
+1. Select Edit 
+2. Select the sliders icon and select "Open Properties" then select "THEMES" 
+Theme settings in View properties
+1. Choose between a light and dark theme for the page - this will put a light or dark filter over all of the pages
+2. Choose the colour for buttons, links and icons on all of the pages
+3. Choose the font in the titles including hero image 
+4. Choose the font for text on the body of the page
+5. Button style across all pages 
+6. Button font colour across all pages 
+7. Choose the button border radius - the roundness of the buttons
+When choosing the Title font and Text font, you have the option to choose from an extended list that will match the event's brand.
+The choices for Title font are:
+• Hind
+• Playfair Display
+• Roboto
+• Oswald
+• Open Sans
+• Lato
+• Quicksand
+• Raleway
+• Abel
+• Alfa Slab One
+• Cinzel Decorative
+• Baloo Thambi
+The choices for Text font are:
+• Lato
+• Roboto
+• Open Sans
+• Quicksand
+• Raleway
+• Abel
+• Abeezee
+• Frank Ruhl Libre
+Updated light theme
+From the latest release, there has been update to the light theme styling (see above as to how to change a page's theme)
+As you can see in the screenshots opposite, the new light theme has:
+• The background navigation colour as white for pages that don't have a hero image underneath and for the sticky navigation
+• The hero image/carousel tint is set to white with an opacity of 50%
+• The information banner tint is set to white with an opacity of 50%
+• The footer colour has changed to white with a line above that is the accent colour 
+The Cookie Banner & Cookie Management (OneTrust)
+Overview 
+The Cookie Message banner is managed via OneTrust
+The Cookie banner messaging is determined by the Privacy Office and is set up according to rules within the OneTrust cookie management tool (https://app.onetrust.com)
+The RELX cookie compliance tool (OneTrust) is the mandatory tool that RX deploys across all of its websites.
+It is important that we provide: a) the correct notice b) choice and c) consent for any data that’s transferring via the cookie data outside – all of which our tool covers. 
+Cookie Management with OneTrust
+About OneTrust
+OneTrust is a RELX-wide tool that is used for managing cookies compliance on websites. In order to comply with cookie legislation across different territories, OneTrust is used to allow users to accept different types of cookies on a website. As there are different types of legislation across different territories (some require users to explictly accept cookies before using a site, while others do not require this), BUs and the Digital Privacy Office (DPO) manage the geo-location rules and templates within the OneTrust online tool (app.onetrust.com)
+How to request access to the OneTrust tool
+Request access to the OneTrust tool is via ServiceNow. You will need to specify that you require Cookie Manager access for your BU (ie. for the UK it will be RXUK OneTrust Cookie Manager access, for Australia it is RXAU OneTrust Cookie Manager access).
+
+How to register for the OneTrust help portal
+Go to my.onetrust.com and create an account by entering your email address and username. This is required to access help documentation.
+
+OneTrust Cookie Management User Guide
+Detailed information on how to manage cookie compliance through the OneTrust tool is available through the ‘My One Trust’ portal: https://my.onetrust.com/s/topic/0TO1Q000000ItRyWAK/cookie-compliance
+Categorising Cookies with OneTrust
+How to categorise cookies using the OneTrust tool
+Uncategorized cookies need to be categorised using the OneTrust tool (https://app.onetrust.com).
+
+More information on this can be found here: 
+https://my.onetrust.com/s/article/UUID-91049ba1-62b7-f7d3-8582-e3b36fadb7c9?topicId=0TO1Q000000ssh3WAA
+RX classifies cookies into four classifications:
+1.       Strictly Necessary Cookies (consent not required)
+
+These cookies are essential in order to enable a user to move around the website, perform basic functions, and use its features such as: - requested services (shopping baskets, e-billing etc.) - authentication - website security - network management; or - remembering user preferences (provided they are not linked to a persistent identifier). These cookies may be set automatically when pages load or as a result of a user request that cannot be fulfilled without the use of the cookie. Generally these are session cookies that expire on closing the browser but not always
+2.       Performance Cookies
+
+These cookies are used to provide site owners with - statistical information; - performance measurement and improvement information (such as page visits, dwell time, bounce rates, technologies used to access the site, and page load speeds); and - visitor behaviour
+3.       Functionality Cookies 
+
+These cookies are there to support site functionality that is visible or advantageous to the user or their experience of the site. This includes personalisation such as user name, language, or the region the user is in, and enhanced functionality like web chat services, surveys, commenting and rating systems, and user preferences.
+4.       Targeting Cookies - AKA Advertising or Marketing Cookies
+These cookies are used to (amongst other things): - managing the performance of adverts; - displaying adverts; - building user profiles to determine the display of adverts elsewhere (re-targeting); and - provide third party social sharing, content or functionality services. These will almost always be third-party cookies and mostly persistent.
+Scanning, Categorising Cookies and Publishing Domains with the OneTrust Tool
+Accessing the OneTrust Tool
+You can manage domains and cookie categories using the OneTrust Cookie Tool (https://app.onetrust.com)
+
+How to add domains to OneTrust
+Website domains have to be added to OneTrust. Click here for more information on how to do this: https://my.onetrust.com/s/article/UUID-621498be-7e5c-23af-3bfd-e772340b4933?topicId=0TO1Q000000ssh3WAA
+How to scan domains using OneTrust
+In order to ensure that domains have up-to-date cookies on them, they must be scanned. More information on how to scan a domain is here: https://my.onetrust.com/s/article/UUID-621498be-7e5c-23af-3bfd-e772340b4933?topicId=0TO1Q000000ssh3WAA
+
+There is also information on how to configure scans here: https://my.onetrust.com/s/article/UUID-0fb33113-359a-18ca-4548-015232c5c967?topicId=0TO1Q000000ssh3WAA
+How to publish domains using OneTrust
+In order to publish any changes made to a domain in OneTrust (ie. cookie picked up in scan, cookie categorisation, template changes), you must publish the domain in OneTrust. As the OneTrust domain information is published to a third-party CDN and it can take up to four hours for any changes to be visible on the front-end website.
+https://my.onetrust.com/s/article/UUID-5394213a-70b9-c4e6-d68c-f809b55e7af6?topicId=0TO1Q000000ssJBWAY
+OneTrust Cookie Management Banner on Atlas Websites
+The digital support team is responsible for implementing and managing the OneTrust cookie management banner on Atlas websites.
+
+Note that the standard AEM Cookie Banner must be disabled and the Cookie Settings link is added to the footer:
+1. Login to AEM and go to Sites
+2. Navigate to the site you are adding OneTrust to
+3. Navigate to the language home pages (ie. English / en-gb.html or French / fr-fr.html)
+
+4. Click on Cookie Settings component at the top of the page and ensure checkbox is not ticked
+
+5. Go to the footer and click on Useful Links. Under 'OneTrust Link Label' at the bottom of the pop-up window, enter in corresponding text for this in the language of the page ie
+
+o English - Cookie Settings
+o French - Notification de cookie
+o German - Cookie Hinweis
+o Chinese -  Cookie设置
+6. Save the page and publish
+OneTrust Cookie Management Banner on Websites outside Atlas
+The OneTrust Cookie Management Banner is required on all RX websites regardless if they are hosted on Atlas or not. Please find details of how to implement the OneTrust banner on websites outside of Atlas.
+
+Using the the OneTrust ID in scripts
+The OneTrust script is generic and the basic structure can be used across multiple websites (if you use the OneTrust ID as a variable). To obtain the OneTrust ID do the following:
+• Login to OneTrust Tool (https://app.onetrust.com/auth/login)
+• Go to ‘Websites’
+• Type the name of the domain in the search filter (top left) - ie. atlas-domain.com
+• Click on the required domain (ensuring that this is the correct domain and not a similar subdomains such as v2.atlas-domain.com or hub.atlas-domain)
+• In the URL, there will be an ID after /scan-results/ and before /reports. Copy and paste this into notepad (ie. for austropharm.at, the URL is https://app.onetrust.com/cookies/scan-results/29743d2f-c144-4ed9-b991-5c138f80e7e0/reports). The domain ID is therefore 29743d2f-c144-4ed9-b991-5c138f80e7e0
+When you are using a generic OneTrust script, you have two main options:
+• Automated Blocking of Cookies on or off
+• OneTrust banner language determined either by the browser or by the language of the document (set in HTML). 
+See below for more details:
+• Note: For the rest of this document, domain IDs will be referred to as ONETRUST_DOMAIN_ID
+OPTION 1
+• Automated Blocking of Cookies ON
+• OneTrust banner language determined  by the browser 
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/ONETRUST_DOMAIN_ID/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="ONETRUST_DOMAIN_ID" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+OPTION 2
+• Automated Blocking of Cookies ON
+• OneTrust banner language determined by the HTML language 
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/ONETRUST_DOMAIN_ID/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="ONETRUST_DOMAIN_ID" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+
+OPTION 3
+• Automated Blocking of Cookies OFF
+• OneTrust banner language determined by the browser
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-document-language="true" data-domain-script="ONETRUST_DOMAIN_ID" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+
+OPTION 4
+• Automated Blocking of Cookies OFF
+• OneTrust banner language determined by the HTML language 
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-document-language="true"
+data-domain-script="ONETRUST_DOMAIN_ID" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+Cookie Message on AEM
+The cookie message component is provided as default in author however it does require some configuration for it to display correctly.
+• Access the Site's Homepage (Language Page) in Edit mode.
+• Click on the Cookie Component and the spanner icon to configure.
+• Check the "Display Cookie Message" checkbox to display the Cookie message; uncheck the check box to hide the cookie message if necessary.
+• Expiry (Days): Allows the user to set the expiry days for the cookie message, generally 365 days.
+• Button Text: Displays on the button to e.g. 'Accept the Cookie' or 'OK'.
+• Message Text: This is the path to the page where the Cookie message is located in your site structure. 
+o Click on the file path icon to navigate and select the Cookie page for your site. This is located in your site structure as a  default and you should navigate all the way to the text e.g. /cookie-message/jcr:content/root/responsivegrid_12colTop/text 
+• The Cookie Message notification text can only be changed by the CMS team. Please contact support if you need to amend this text.
+
+Step-by-Step Guide: How to Request OneTrust Cookie Management on Service Now
+STEP 1: Create a Service Now ticket under Digital Atlas > Atlas Site Management.
+STEP 2: Enter details into the fields. Add the site's live URL.
+STEP 3: The cookie message should now appear at the top portion of the web page upon visiting your site.
+Favicons & Robots.txt
+Overview
+Favicons (also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon), is a file containing one or more small icons, associated with a website.
+robots.txt files allow websites to communicate with web crawlers and web robots. It is often used to hide pages from search results.
+Key Features and Configuration
+Create a metadata folder
+A metadata folder is required to house these assets so they are integrated with the site as a default.
+• Create a top level folder in your Digital Asset Management (DAM) called 'metadata'.
+• The metadata folder will house favicon and robots.txt files.
+Adding Favicons
+• Create a favicon for your site 16x16 pixels.
+• You can either use a graphics program such as Photoshop or an online favicon generator.
+• Upload the favicon to the 'metadata' folder.
+• Publish the file and publish the folder.
+Adding robots.txt
+• Upload the *robots.txt file to the ‘metadata’ folder.
+• Publish the file and then publish the folder
+• Robots.txt can include the following:
+
+- Noindex: tells search engines not to include your page(s) in search results.
+- Disallow: tells them not to crawl your page(s).
+- Nofollow: tells them not to follow the links on your page.
+
+• Suggested robots.txt file - this will ensure error pages are not being crawled and indexed by search engines or included in search results. In addition, the exhibitor-portal link will not be included in search results or to follow the exhibitor-portal link.
+
+User-agent: *
+Disallow: /*error-pages
+Noindex: /*error-pages
+Noindex: /exhibitor-portal
+Nofollow: /exhibitor-portal
+
+Footer Components
+Table of Contents
+1. Overview
+2. Show Info
+3. Useful Links
+4. Built by RX 
+5. Social Media Links
+6. Copyright Notice
+7. Flexible Layout Container
+ Overview
+The Footer is configured at the language level i.e. Language Page and this configuration cascades down the tree. 
+The footer information is contained within the RX Layout Container
+• Image/Logo
+• Show Info
+• The telephone number can be clicked and leads to call  
+• Useful Links
+• Social Links
+• Copyright Notice
+• Sub Footer
+o The Author should ensure both the Reed Logo and RELX logo appear in this area as outlined by RELX guidelines.
+ 
+Show Info
+The Show Info section of the footer is located in the bottom left hand corner of the footer. It allows the content author to input information about the event that a site visitor may find useful.
+There are 6 fields in the edit dialogue -
+1) Title - the title of the section as it will appear on the page
+2) Date & Time -  when the show will take place (note you can have multple entries)
+3) Date - the date of the show
+4) Date Link to -  link this to any page in the site or to an external site
+4) Time - the time of the show (if applicable)
+5) Add - add an additional entry (ie if the show start/end times are different)
+6) Location - where the show will be taking place
+7) Location link - link this to any page in the site or to an external site
+8) Email Address
+9) Telephone Number
+10) Fax Number
+11) Chat
+12) Chat link to - link this to any page in the site or to an external site
+ 
+The icons will appear automatically when the information is in the field.
+Useful Links
+The useful links section is located towards the centre of the footer. It allows the author to input links into the footer that the user may find relevant. There are eight main sections to the edit dialogue:
+1) Link list header
+• This is the title that the links will appear under, if nothing is entered, no title will show.
+2) Linklist layout
+• There are two layout options available: Vertical or Horizontal
+3) Links
+• Users can add in links in this section. The detaulf is one link but users can add additional links if required
+4) Link Label
+• This is the display text of the link
+5) Link Type for DTM Tracking
+• There are five options available:
+
+None (default)
+Internal Link
+External Link
+Privacy Policy
+Terms & Conditions Link
+6) Path
+• The URL of the link can be internal or external
+7) Add
+• Adds another link onto the page
+8) OneTrust - Enable OneTrust Cookie Management Link
+• Ticking the box 'Enable OneTrust Cookie Management Link' will mean that the text entered in the field below will appear in the footer. The link will open the OneTrust Cookie Preferences panel. This is a requirement when the OneTrust cookie banner has been enabled.
+• The text field should be 'Cookie Settings' in the language of the page ie:
+
+English - Cookie Settings
+French - Notification de cookie
+German - Cookie Hinweis
+Chinese -  Cookie设置
+To save changes, click the tick icon. To cancel, click the cross icon.
+Social Media Links List
+The social media links section allows the author to add relevent social media links onto the webpage. 
+If you add links to platforms such as Twitter, Facebook, Instagram, Youtube, and LinkedIn, the associated icon for those platforms will be added automatically.
+1) Link list header
+• This is the title that the links will appear under, if nothing is entered, no title will show.
+2) Linklist layout
+• There are two layout options available: Vertical or Horizontal
+3) Links
+• Users can add in links in this section. The detaulf is one link but users can add additional links if required
+4) Link Label
+• This is the display text of the link
+5) Link Type for DTM Tracking
+• There are five options available:
+
+None (default)
+Internal Link
+External Link
+Privacy Policy
+Terms & Conditions Link
+6) Path
+• The URL of the link can be internal or external
+7) Add
+• Adds another link onto the page
+8) OneTrust - Enable OneTrust Cookie Management Link
+• Ticking the box 'Enable OneTrust Cookie Management Link' will mean that the text entered in the field below will appear in the footer. The link will open the OneTrust Cookie Preferences panel. This is a requirement when the OneTrust cookie banner has been enabled.
+• The text field should be 'Cookie Settings' in the language of the page ie:
+
+English - Cookie Settings
+French - Notification de cookie
+German - Cookie Hinweis
+Chinese -  Cookie设置
+To save changes, click the tick icon. To cancel, click the cross icon.
+Built by RX Footer links
+A new mandatory branding guideline for fully owned websites is to provide the following links, after Privacy Options. 
+To edit this on your current website you'll need to: 
+1. On your footer, after Privacy Options, add the new RX footer links
+ Copyright Notice
+This component allows users to add and edit a site-wide copyright message. There are two text fields:
+• Copyright text
+© <Year> Reed Exhibitions Ltd.
+
+• Additional text
+Other relevant text that needs to be displayed in the footer
+Flexible Layout Container
+The flexi-grid allows you to be flexible in the layout of the components with different combinations possible. 
+• You can use the flexi-grid layout function to reduce the component width. As soon as you click on the layout arrow symbol you will see the grid guide appear. This will help you to decide what width you want the component to be.  
+• If the width of the page can fit more than one component, then it will push the second component and any others that can fit onto the same row automatically.
+• You can also reduce the width of the component from both sides, which allows you to move the component to the middle. 
+
+Header Components
+Overview 
+The header has a number of elements including:
+• Show Logo
+This image will be automatically re-sized to the fit the space
+
+• Partner or Sponsor Logo
+This will be adjacent to the Show Logo and will reduce the size of the Show Logo
+
+• Show information (date and location)
+The edit dialogue consists of a field for the date and location
+
+• Language Selector
+The langage selector will only appear when multiple languages are published on a site
+
+• Button
+The edit dialogue for the button has a field for the display text and a field for the URL link.
+
+• Login
+There is an option to enable the login component in the Header.
+There are three types of Header Menu that can be configured in the Header component.
+• Simple Menu
+• Burger Menu
+• Mega Menu
+ 
+Navigation items
+• Unless the site is a Portfolio site, the navigation items are driven off the site structure where the first 5 child items enabled to 'show in navigation' after the homepage will be displayed.
+
+• Portfolio sites have a different navigation structure. For information on Portfolio sites, please review the relevant page in the User Guide.
+Portfolio sites
+Configuring Header Components
+Header components are configured independently.
+Select the component that you wish to configure:
+• Show information. 
+• Button.
+• Logo.
+• Partner or Sponsor Logo
+• Once the component has been selected, select the spanner icon to configure.
+Show Information
+The show information in the header can be configured to show the date and location of the show
+•  Add the date when the show will take place. 
+•  Date Link - Link this to any page in the site or to an external site or ICS file uploaded in your Assets.
+•  Add the location of the show.
+•  Link this date icon to an internal page or external page.
+Users can apply show and date information from the Edition page properties by clicking the appropriate checkbox. Managing Site Properties
+Site Logo
+
+You can add a partner or site logo by adding this to the Image component in the Header. This is managed in the same way as normal Image components.
+
+Partner or Sponsor Logo
+
+You can add a partner or sponsor logo by clicking the configure icon in the header component. This will bring up the option of adding a Partner or Sponsor Logo. This will be located adjacent to the main logo on the page and is managed in the same way as the main logo.
+Header Button
+
+You can add a Call to Action Button in the Header (ie. for Registrations). This is managed in the same way as standard buttons on the site.
+Configuring Navigation Menu Types
+There are three types of header menu:
+• Simple menu
+This is the default menu type with up to 5 links in the primary navigation
+
+• Mega menu
+This allows users to access secondary navigation links. Click here for more details on Mega Menus
+
+• Burger menu
+This will show only a burger menu icon (three short horizontal lines), which users will have to click in order to view primary navigation links.
+Site Properties
+Site level configurations are managed in the Properties of your site. Likewise, Page level properties are managed in the Properties of your page. To access site Properties:
+1. Go to the site structure view
+2. Select the thumbnail of the 'Live' page
+3. Click Properties
+
+Basic
+• Title
+This should be 'live'
+
+• On/Off Time
+Publish site or Turn Off site at a specified time (not recommended)
+
+• Event Location
+Entering Location and Street Address will appear in Search Engine Results
+
+• Event Dates
+Entering Start Date and End Date will appear in Search Engine Results
+ 
+
+Advanced
+• Language
+Set to the primary language of the site
+• Redirect
+Not applicable for site properties
+
+• Design
+Not applicable
+
+• Alias
+Not applicable for site properties
+
+• Configuration
+This can either inherit settings from the root folder or can be set manually. Usually the inherit settings will be checked.
+
+• Template Settings
+Not applicable for site properties
+
+• Authentication Requirement
+Not applicable for site properties unless the whole site requires authentication
+
+• Export
+Not applicable
+ 
+Thumbnail
+Optional - this changes the thumbnail displayed from within AEM Author. It is not displayed on the front end of the website
+ 
+Personalization
+
+Not applicable
+
+Permissions
+
+Only applicable if site-wide authentication is required. It is recommended to add permissions on sub-folders / pages.
+
+Cloud Services
+
+This is used to manage site-wide integrations with Eloqua, Gleanin and Priority Code.
+
+Please note that DTM is depricated and should not be used anymore.
+
+More detailed information is available on the relative user guide pages for these pages.
+ Permissions
+
+Permissions are used to restrict access to certain pages. This is not applicable for most sites on Atlas, unless the Participant Portal is enabled. 
+Themes
+Site Themes
+There are two themes - Light and Dark.
+Accent Colour
+Select the accent colour to be used on the site. This will appear in the header for link underlines in primary navigation, on button backgrounds and links
+Title Font
+Select the font used in the primary navigation
+Text Font
+Select the font used in the main text area
+
+Button Style
+There are three button styles available - Flat, 3D and light
+Button font colour
+There are two font colours available - White & Black
+Button border radius
+Select the pixels around the button. The default is 0.
+
+Site Background
+Check 'Apply Background' tickbox to display options to either apply a background colour or background image.
+Backend Services
+
+Event Edition
+
+*For Event ID and Edition on Back End Services Tab, please follow the link bellow, then come back for Google and Facebook configurations.
+Back End Services Event ID, Event Edition, Event Edition name
+
+Google Site Verification
+Enter the Google Site Verification ID here (if applicable)
+Facebook Verification
+• Live
+• Property
+• Add domain verification Meta Tag
+Show Planning
+Click the textbox to enable Show Planning & Floor Planning features
+• Enable Show Planning
+• Enable Email for your show plan
+• Enable Floor Plan (layout data required)
+
+Add verification metadata
+Runbook to add verification metadata for Google, Facebook or any platform needed
+ Note: This will only generate the script below using meta name and content.
+ 
+<!-- Domain Verification-->
+<meta name="google-site-verification" content="y95VK0_Ji_iTouF1InY05mxoef6sD67r3sL4N0eWAcg"/>
+Steps
+Step 1: Open AEM author
+Step 2: Go to the Requested AEM Site node
+Step 3: Open the live node properties
+Step 4: Go to the backend services tab
+Step 5: Add the requested verification as described in the ticket
+1. update the name field, e.g google-site-verification
+2. update the content, e.g UbnKPYblQp-r1nLZ4dDkcZDMms_UxeK9IpU20PQ7KEU
+Step 6: Save and close
+Step 7: Publish
+Creating a New Page
+Overview
+Note: If there are multiple language versions created using the live copy method, these live copies will automatically inherit the new page. Once the page has been created, the author must publish it to make it visible to site visitors.
+Select Page Destination
+1. Select the destination of the page - this is the parent node which the page will sit beneath. The top level is your Language pages where you will notice others have been created as a default in the blueprint.
+2. Select "Create" from the site menu.
+Access Page Template
+1. Select "Page" from the site menu.
+Select Page Template
+1. Select from the "Content Page" or "Responsive Page" template. 
+2. Select next.
+Enter Page Details
+1. Name of the page: this is what appears in the URL. If left blank, this will be automatically populated from the page title.
+2. Title of the page in the site structure.
+3. Leave blank (to be implemented).
+4.  Leave blank.
+5. Overrides the page title in page navigation (header) - can leave blank to default title.
+6. Once all mandatory fields are completed select create.
+Enter Page Details
+To add a new page you first need to view the Site Structure in Column view and select the parent under which the new page will sit; in most cases this will be the language ‘Home’ page (e.g. ‘English’, ‘German’, etc.). You may wish to use an abbrievated format (ie. 'en' or 'de'), or a localised version (ie. 'English', 'Deutsch').
+
+Click on ‘Create’ in the top right of the browser window and select ‘Page’.
+
+Select the ‘Content Page’ template so that it is ticked.
+Click on ‘Next’ in the top right of the browser window.
+
+You will then be presented with the following view:
+Tile and Tags
+The Name field represents what the page will be called in the URL when it is generated. You can give it a specific name here, or alternatively leave it blank and it will be automatically generated from the contents of the Title field (below)
+In the Title field enter the name of the page as you want it to appear in the Site Structure. For ease of use it is recommended that you keep this succinct, especially if it is being used to generate the page name for the URL.
+More Titles and Descriptions
+The Navigation Title field can be used If you want to give the page a specific name which will appear at the top of the browser when people are using the site. Text you enter here will override the page Title which you set previously.
+
+Once you have entered all of the mandatory fields have been entered click on ‘Create’ in the top right of the browser window. A confirmation dialog box will appear:
+
+Click on ‘Done’ to close the page and return to the Site Structure view. Or click on ‘Open’ if you want to open the page in a new tab for adding content.
