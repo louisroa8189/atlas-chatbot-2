@@ -24,8 +24,8 @@ for package in packages:
 # Set environment variables
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_API_KEY'] = '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'
-os.environ['OPENAI_API_KEY'] = 'sk-proj-9OjVBu1IIAhTf6z2p1pFT3BlbkFJA8UO6FffOlzJMsbqqkwd'
+os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 
 # Now import the required libraries
 from langchain import hub
