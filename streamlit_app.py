@@ -1,13 +1,5 @@
 import streamlit as st
 import os
-
-# Set environment variables
-os.environ['LANGCHAIN_TRACING_V2'] = 'true'
-os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
-os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
-
-# Import required libraries
 from langchain import hub
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
@@ -15,6 +7,12 @@ from langchain_community.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+
+# Set environment variables
+os.environ['LANGCHAIN_TRACING_V2'] = 'true'
+os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
+os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_resource
 def initialize_rag():
@@ -74,7 +72,7 @@ if prompt := st.chat_input("What is your question?"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    response = rag_chain.invoke(prompt)
+    response = rag_chain.invoke({"question": prompt})
     
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
