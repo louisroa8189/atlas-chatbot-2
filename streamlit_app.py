@@ -1,4 +1,4 @@
-pip install --upgrade google.protobuf opentelemetry-api opentelemetry-sdk chromadb
+!pip install --upgrade google.protobuf opentelemetry-api opentelemetry-sdk chromadb
 
 import streamlit as st
 import os
@@ -16,7 +16,6 @@ os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
 os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
 os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 
-@st.cache_resource
 def initialize_rag():
     # Load Documents from local file
     loader = TextLoader("word_test_2.txt")
