@@ -1,2 +1,9 @@
 streamlit
 openai
+langchain
+langchain_community
+tiktoken
+langchain-openai
+langchainhub
+chromadb
+bs4
