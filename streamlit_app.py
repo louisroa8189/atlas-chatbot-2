@@ -1,56 +1,103 @@
 import streamlit as st
-from openai import OpenAI
+import os
+import subprocess
+import sys
 
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
-)
+# Function to install packages
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
+# Install required packages
+packages = [
+    "langchain_community",
+    "tiktoken",
+    "langchain-openai",
+    "langchainhub",
+    "chromadb",
+    "langchain",
+    "bs4"
+]
 
-    # Create an OpenAI client.
-    client = OpenAI(api_key=openai_api_key)
+for package in packages:
+    install(package)
 
-    # Create a session state variable to store the chat messages. This ensures that the
-    # messages persist across reruns.
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+# Set environment variables
+os.environ['LANGCHAIN_TRACING_V2'] = 'true'
+os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
+os.environ['LANGCHAIN_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'sk-proj-9OjVBu1IIAhTf6z2p1pFT3BlbkFJA8UO6FffOlzJMsbqqkwd'
 
-    # Display the existing chat messages via `st.chat_message`.
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+# Now import the required libraries
+from langchain import hub
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import TextLoader
+from langchain_community.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-    # Create a chat input field to allow the user to enter a message. This will display
-    # automatically at the bottom of the page.
-    if prompt := st.chat_input("What is up?"):
+@st.cache_resource
+def initialize_rag():
+    # Load Documents from local file
+    loader = TextLoader("word_test_2.txt")
+    docs = loader.load()
 
-        # Store and display the current prompt.
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+    # Split
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    splits = text_splitter.split_documents(docs)
 
-        # Generate a response using the OpenAI API.
-        stream = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
-        )
+    # Embed
+    vectorstore = Chroma.from_documents(documents=splits,
+                                        embedding=OpenAIEmbeddings())
 
-        # Stream the response to the chat using `st.write_stream`, then store it in 
-        # session state.
-        with st.chat_message("assistant"):
-            response = st.write_stream(stream)
-        st.session_state.messages.append({"role": "assistant", "content": response})
+    retriever = vectorstore.as_retriever()
+
+    # Prompt
+    prompt = hub.pull("rlm/rag-prompt")
+
+    # LLM
+    llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
+
+    # Post-processing
+    def format_docs(docs):
+        return "\n\n".join(doc.page_content for doc in docs)
+
+    # Chain
+    rag_chain = (
+        {"context": retriever | format_docs, "question": RunnablePassthrough()}
+        | prompt
+        | llm
+        | StrOutputParser()
+    )
+
+    return rag_chain
+
+# Initialize the RAG pipeline
+rag_chain = initialize_rag()
+
+# Streamlit UI
+st.title("RAG Chatbot")
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# React to user input
+if prompt := st.chat_input("What is your question?"):
+    # Display user message in chat message container
+    st.chat_message("user").markdown(prompt)
+    # Add user message to chat history
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+    response = rag_chain.invoke(prompt)
+    
+    # Display assistant response in chat message container
+    with st.chat_message("assistant"):
+        st.markdown(response)
+    # Add assistant response to chat history
+    st.session_state.messages.append({"role": "assistant", "content": response})
