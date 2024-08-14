@@ -1,25 +1,5 @@
 import streamlit as st
 import os
-import subprocess
-import sys
-
-# Function to install packages
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# Install required packages
-packages = [
-    "langchain_community",
-    "tiktoken",
-    "langchain-openai",
-    "langchainhub",
-    "chromadb",
-    "langchain",
-    "bs4"
-]
-
-for package in packages:
-    install(package)
 
 # Set environment variables
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
@@ -27,7 +7,7 @@ os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
 os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
 os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 
-# Now import the required libraries
+# Import required libraries
 from langchain import hub
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
