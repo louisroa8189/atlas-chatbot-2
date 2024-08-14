@@ -1,4 +1,4 @@
-!pip install --upgrade google.protobuf opentelemetry-api opentelemetry-sdk chromadb
+pip install --upgrade google.protobuf opentelemetry-api opentelemetry-sdk chromadb
 
 import streamlit as st
 import os
